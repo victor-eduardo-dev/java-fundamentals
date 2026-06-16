@@ -1,4 +1,4 @@
-package src.variables_and_constants;
+package variables_and_constants;
 
 public class VariablesAndConstants {
 

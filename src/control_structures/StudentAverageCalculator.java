@@ -26,25 +26,27 @@ public class StudentAverageCalculator {
         // Fechamento do INPUT/Scanner.
         INPUT.close();
     }
+
     // Pegando as notas a partir do input do usuário.
     public static double getUserGrade(String msg) {
         System.out.print(msg);
         return INPUT.nextDouble();
     }
+
     // Decisão de qual classificação será mostrada.
     public static void showResult(double average) {
         if (average <= 10 && average >= 7.0) {
             System.out.printf("Média do aluno(a): %.1f%nStatus: APROVADO(A)!%n", average);
-        }else if (average < 7.0 && average >= 5.0) {
+        } else if (average < 7.0 && average >= 5.0) {
             System.out.printf("Média do aluno(a): %.1f%nStatus: EM RECUPERAÇÃO!%n", average);
-        }else if (average < 5.0 && average >= 0 ) {
+        } else if (average < 5.0 && average >= 0) {
             System.out.printf("Média do aluno(a): %.1f%nStatus: REPROVADO(A)!%n", average);
-        }else {
+        } else {
             System.out.printf(" Digite apenas números entre:%n           0 e 10!%n");
         }
     }
 
-    public static void separator(String symbol, int countSymbol){
+    public static void separator(String symbol, int countSymbol) {
         System.out.println(symbol.repeat(countSymbol));
     }
 }

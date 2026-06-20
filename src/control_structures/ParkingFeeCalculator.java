@@ -2,7 +2,7 @@ package control_structures;
 
 import java.util.Scanner;
 
-public class parkingFeeCalculator {
+public class ParkingFeeCalculator {
 
     public static final Scanner INPUT = new Scanner(System.in);
 
